@@ -23,14 +23,10 @@ Movie book is a website that allows users to search for and retrieve information
 
 # Installation
 
-For Frontend of this project click [here](https://github.com/pesto-students/techswipe-frontend-p5-team1-devanshu)
-
 Running this project should be very easy, quick and automatic using monorepo.
 
 - Fork or directly clone this repository to your local machine
-- Run `npm i` / `npm install` to install all dependencies.</br>
-- Once the dependencies are finished installing, use the `npm run dev` command to start the server. </br>
-- Setup frontend by clicking this [link](https://github.com/pesto-students/techswipe-frontend-p5-team1-devanshu)
+- open `index.js` file in your broser
 
 # Technology Stack
 
