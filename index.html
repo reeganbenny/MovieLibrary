@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+ <meta charset="utf-8" />
+ <title>Movie Book</title>
+ <meta name="viewport" content="width=device-width, initial-scale=1" />
+ <link rel="stylesheet" href="css/style.css">
+ <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+ </head>
+ <body>
+     <header>
+         <div class = "title" id = "movieBrand"> <a><i class="fas fa-video"></i> Movie Book</a></div>
+         <div class = "library-link" id = "movieLibrary"><a><i class="fas fa-film"></i> Library</a></div>
+     </header>
+     <div class="detailSearch detailShow hide">
+        <form action="" class="details-form">
+            <input type="text" value="" class = "search" id = "movieSearch" placeholder="Enter the movie name">
+            <button class = "btn" type = "button" id = "searchElement"><i class="fas fa-search"></i></button>
+        </form>
+     </div> 
+
+
+ <main>
+     <div class = "searchContainer" id = "homeSearch">
+         <p class = "description">Find your Movie</p>
+        <form class="home-form">
+            <input type="text" value="" class = "search" id = "movieInput" placeholder="Enter the movie name">
+            <button class = "btn" type = "button"  id = "movieHomeSearchBtn"><i class="fas fa-search"></i></button>
+        </form>
+    </div>
+
+
+    <p class="result-movie detailShow hide" id = "resultMovie"></p>
+    <div class = "result-container detailShow hide" id = "resultContainer">
+        <!-- Html for this code will be get from javascript. -->
+    </div>
+
+
+    <div class="detail-card" id= "detail-card">
+        <div class="movie-card">  
+            <img class="cover-poster" id = "cover-poster" src="" onerror="this.src= 'images/no-image.png'">
+            <img class="main-poster" id = "main-poster" src="" onerror="this.src= 'images/no-image.png'">
+            <p class="close-icon"><i class="far fa-times-circle"></i></p>
+            <div class="movie-details"> 
+                <p id="details-title" class="details-title"></p>   
+                <div class="details-description">
+                    <p class="details-rating details-topic">IMDB rating: <i class="fas fa-star"></i> <span class="rating-value" id="rating-value"></span></p>
+                    <p class="details-rated details-topic">Rated: <span class = "details-value" id="rated-value"></span></p>
+                    <p class="details-type details-topic">Type: <span class = "details-value" id = "type-value"></span></p>
+                    <p class="details-genre details-topic">Genre: <span class="genre-value details-value" id = "genre-value"></span></p>
+                    <p class="details-lang details-topic">Language: <span class="lang-value details-value" id = "lang-value"></span></p>
+                    <p class="details-plot details-topic">Plot: <span class= "plot-value details-value" id = "plot-value"></span></p>
+                    <p class="details-release details-topic">Release date: <span class= "release-value details-value" id = "release-value"></span></p>
+                    <p class="details-director details-topic">Director: <span class= "director-value details-value" id = "director-value"></span></p>
+                    <p class="details-cast details-topic">Cast: <span class= "cast-value details-value" id = "cast-value"></span></p>
+                </div>  
+            </div>
+        </div>    
+    </div>
+    <div id="loading"></div>
+ </main>
+ <script src="js/main.js" type="module"></script>
+ </body>
+</html>
